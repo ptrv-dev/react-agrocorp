@@ -57,9 +57,16 @@ const Header: React.FC = () => {
 							<span>tov.agrocorp@gmail.com</span>
 						</a>
 					</div>
-					<button className="button header__button">
-						Зв'язатися з нами
-					</button>
+					<div className="header__actions">
+						<button className="button header__button">
+							Зв'язатися з нами
+						</button>
+						<button className="header-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
 				</div>
 			</div>
 			<div className="header__bottom">
