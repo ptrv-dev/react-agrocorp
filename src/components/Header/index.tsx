@@ -57,7 +57,37 @@ const Header: React.FC = () => {
 				</div>
 			</div>
 			<div className="header__bottom">
-				<div className="container"></div>
+				<div className="container">
+					<nav className="nav header__nav">
+						<ul className="nav__list">
+							<li className="nav__item">
+								<a href="/" className="nav__link">
+									Головна
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="/" className="nav__link">
+									Продукція
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="/" className="nav__link">
+									Новини
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="/" className="nav__link">
+									Про нас
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="/" className="nav__link">
+									Контакти
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 	);
