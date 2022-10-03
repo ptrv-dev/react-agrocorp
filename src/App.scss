@@ -1,6 +1,7 @@
 *,
 *::after,
 *::before {
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -19,6 +20,10 @@ h6 {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+button {
+	cursor: pointer;
+}
+
 #root {
 	overflow: hidden;
 }
@@ -26,4 +31,13 @@ h6 {
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
+}
+
+.button {
+	background: #153548;
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 20px;
 }

@@ -20,7 +20,10 @@ const Header: React.FC = () => {
 						</div>
 					</Link>
 					<div className="header__contacts">
-						<a href="tel:+380984491149" className="header__phone">
+						<a
+							href="tel:+380984491149"
+							className="header__contacts-item header__phone"
+						>
 							<svg
 								width="18"
 								height="18"
@@ -35,7 +38,10 @@ const Header: React.FC = () => {
 							</svg>
 							<span>+(380) 98 449 11 49</span>
 						</a>
-						<a href="mailto:tov.agrocorp@gmail.com">
+						<a
+							href="mailto:tov.agrocorp@gmail.com"
+							className="header__contacts-item header__email"
+						>
 							<svg
 								width="18"
 								height="19"
