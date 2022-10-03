@@ -4,6 +4,24 @@ import { Link } from 'react-router-dom';
 import './Header.scss';
 
 const Header: React.FC = () => {
+	const [isNavOpen, setIsNavOpen] = React.useState<boolean>(false);
+	const [isButtonMoved, setIsButtonMoved] = React.useState<boolean>(
+		window.innerWidth < 520
+	);
+
+	React.useEffect(() => {
+		const resize = () => {
+			if (window.innerWidth < 520) setIsButtonMoved(true);
+			else setIsButtonMoved(false);
+		};
+		window.addEventListener('resize', resize);
+		return () => {
+			document.body.removeEventListener('click', resize);
+		};
+	}, []);
+
+	const onBurgerClick = () => setIsNavOpen((prev) => !prev);
+
 	return (
 		<header className="header">
 			<div className="header__top">
@@ -58,10 +76,17 @@ const Header: React.FC = () => {
 						</a>
 					</div>
 					<div className="header__actions">
-						<button className="button header__button">
-							Зв'язатися з нами
-						</button>
-						<button className="header-burger">
+						{!isButtonMoved && (
+							<button className="button header__button">
+								Зв'язатися з нами
+							</button>
+						)}
+						<button
+							onClick={onBurgerClick}
+							className={`header-burger ${
+								isNavOpen ? 'active' : ''
+							}`}
+						>
 							<span></span>
 							<span></span>
 							<span></span>
@@ -69,7 +94,7 @@ const Header: React.FC = () => {
 					</div>
 				</div>
 			</div>
-			<div className="header__bottom">
+			<div className={`header__bottom ${isNavOpen ? 'active' : ''}`}>
 				<div className="container">
 					<nav className="nav header__nav">
 						<ul className="nav__list">
@@ -98,6 +123,11 @@ const Header: React.FC = () => {
 									Контакти
 								</a>
 							</li>
+							{isButtonMoved && (
+								<button className="button header__button">
+									Зв'язатися з нами
+								</button>
+							)}
 						</ul>
 					</nav>
 				</div>
