@@ -5,8 +5,8 @@ import './Hero.scss';
 const Hero: React.FC = () => {
 	return (
 		<div className="hero">
+			<div className="hero__decorator hero__decorator_small"></div>
 			<div className="container">
-				<div className="hero__decorator hero__decorator_small"></div>
 				<div className="hero__column">
 					<h1 className="hero__title">
 						Виробник сільськогосподарської техніки та запасних
@@ -20,8 +20,8 @@ const Hero: React.FC = () => {
 							У каталог
 							<svg
 								width="18"
-								height="18"
-								viewBox="0 0 18 18"
+								height="19"
+								viewBox="0 0 18 19"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -39,8 +39,8 @@ const Hero: React.FC = () => {
 						alt="Трактор"
 					/>
 				</div>
-				<div className="hero__decorator"></div>
 			</div>
+			<div className="hero__decorator"></div>
 		</div>
 	);
 };
