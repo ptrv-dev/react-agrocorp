@@ -14,7 +14,7 @@ const SalesHitItem: React.FC<SalesHitItemType> = ({
 		<div className="sales-hit-item">
 			<div className="sales-hit-item__image">
 				<img
-					src={require(`../../static/img/products/${id}/0.png`)}
+					// src={require(`../../static/img/products/${id}/0.png`)}
 					alt={title}
 				/>
 			</div>

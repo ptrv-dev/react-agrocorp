@@ -111,7 +111,7 @@ const Header: React.FC = () => {
 							<Link
 								to={'catalog'}
 								className={`nav__item ${
-									useLocation().pathname === '/catalog'
+									useLocation().pathname.includes('catalog')
 										? 'active'
 										: ''
 								}`}
