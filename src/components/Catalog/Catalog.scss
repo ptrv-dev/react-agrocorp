@@ -1,0 +1,9 @@
+.catalog {
+	background: #f0f4f7;
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 170px);
+		justify-content: center;
+		grid-gap: 30px;
+	}
+}

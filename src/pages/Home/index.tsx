@@ -1,5 +1,6 @@
 import React from 'react';
 import Advantages from '../../components/Advantages';
+import Catalog from '../../components/Catalog';
 
 import Hero from '../../components/Hero';
 
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
 		<>
 			<Hero />
 			<Advantages />
+			<Catalog />
 		</>
 	);
 };

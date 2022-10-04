@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"imageUrl": "pluhy-oborotni.png",
+		"title": "Плуги оборотні"
+	},
+	{
+		"id": 2,
+		"imageUrl": "rozkydach-min-dobryv.png",
+		"title": "Розкидач мін. добрив"
+	},
+	{
+		"id": 3,
+		"imageUrl": "shvydk-front-navaj.png",
+		"title": "Швидкознімний фронтальний навантажувач"
+	},
+	{
+		"id": 4,
+		"imageUrl": "rozkidach-org-dobruv.png",
+		"title": "Розкидачі органічних добрив"
+	},
+	{
+		"id": 5,
+		"imageUrl": "prosipani-sivalku.png",
+		"title": "Просапні сівалки"
+	},
+	{
+		"id": 6,
+		"imageUrl": "kyltivatoru.png",
+		"title": "Культиватори"
+	},
+	{
+		"id": 7,
+		"imageUrl": "boronu.png",
+		"title": "Борони"
+	},
+	{
+		"id": 8,
+		"imageUrl": "prichepu.png",
+		"title": "Причепи"
+	},
+	{
+		"id": 9,
+		"imageUrl": "bochku.png",
+		"title": "Бочки"
+	},
+	{
+		"id": 10,
+		"imageUrl": "kotku-podribn.png",
+		"title": "Котки подрібнювачі"
+	}
+]
