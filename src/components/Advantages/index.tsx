@@ -3,6 +3,29 @@ import React from 'react';
 import './Advantages.scss';
 
 const Advantages: React.FC = () => {
+	const advantagesList = [
+		{
+			title: 'Гарантія якості',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
+		},
+		{
+			title: 'Безкоштовна доставка',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
+		},
+		{
+			title: 'Великий каталог',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
+		},
+		{
+			title: 'Швидкі консультації',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
+		},
+	];
+
 	return (
 		<section className="section advantages">
 			<div className="container">
@@ -26,12 +49,10 @@ const Advantages: React.FC = () => {
 							</svg>
 						</div>
 						<h4 className="advantages-item__title">
-							Гарантія якості
+							{advantagesList[0].title}
 						</h4>
 						<p className="advantages-item__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Quisque eget ultrices sapien, id ullamcorper
-							lacus. Vestibulum sollicitudin nibh nec lacus.
+							{advantagesList[0].description}
 						</p>
 					</div>
 					<div className="advantages__item advantages-item">
@@ -60,12 +81,10 @@ const Advantages: React.FC = () => {
 							</svg>
 						</div>
 						<h4 className="advantages-item__title">
-							Безкоштовна доставка
+							{advantagesList[1].title}
 						</h4>
 						<p className="advantages-item__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Quisque eget ultrices sapien, id ullamcorper
-							lacus. Vestibulum sollicitudin nibh nec lacus.
+							{advantagesList[1].description}
 						</p>
 					</div>
 					<div className="advantages__item advantages-item">
@@ -98,12 +117,10 @@ const Advantages: React.FC = () => {
 							</svg>
 						</div>
 						<h4 className="advantages-item__title">
-							Великий каталог
+							{advantagesList[2].title}
 						</h4>
 						<p className="advantages-item__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Quisque eget ultrices sapien, id ullamcorper
-							lacus. Vestibulum sollicitudin nibh nec lacus.
+							{advantagesList[2].description}
 						</p>
 					</div>
 					<div className="advantages__item advantages-item">
@@ -122,12 +139,10 @@ const Advantages: React.FC = () => {
 							</svg>
 						</div>
 						<h4 className="advantages-item__title">
-							Швидкі консультації
+							{advantagesList[3].title}
 						</h4>
 						<p className="advantages-item__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Quisque eget ultrices sapien, id ullamcorper
-							lacus. Vestibulum sollicitudin nibh nec lacus.
+							{advantagesList[3].description}
 						</p>
 					</div>
 				</div>
