@@ -9,7 +9,7 @@ import './SalesHit.scss';
 
 const SalesHit: React.FC = () => {
 	const salesHitList = useSelector((state: RootState) => state.salesHit);
-	console.log(salesHitList);
+
 	return (
 		<section className="section sales-hit">
 			<div className="container">

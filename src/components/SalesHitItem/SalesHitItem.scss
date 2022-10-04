@@ -3,9 +3,10 @@
 	padding: 20px;
 	background: #f0f4f7;
 	max-width: 370px;
+	margin-bottom: 30px;
 	@media screen and (max-width: 1023.98px) {
-		max-width: 320px;
 		margin: 0 15px 30px 15px;
+		max-width: 320px;
 	}
 	@media screen and (max-width: 375px) {
 		width: 100%;

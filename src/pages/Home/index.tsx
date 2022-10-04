@@ -3,6 +3,7 @@ import Hero from '../../components/Hero';
 import Advantages from '../../components/Advantages';
 import Catalog from '../../components/Catalog';
 import SalesHit from '../../components/SalesHit';
+import Reviews from '../../components/Reviews';
 
 const Home: React.FC = () => {
 	return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
 			<Advantages />
 			<Catalog />
 			<SalesHit />
+			<Reviews />
 		</>
 	);
 };

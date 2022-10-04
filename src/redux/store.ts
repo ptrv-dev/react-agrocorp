@@ -3,11 +3,13 @@ import { useDispatch } from 'react-redux';
 
 import catalogReducer from './slices/catalogSlice';
 import salesHitReducer from './slices/salesHitSlice';
+import reviewsReducer from './slices/reviewsSlice';
 
 export const store = configureStore({
 	reducer: {
 		catalog: catalogReducer,
 		salesHit: salesHitReducer,
+		reviews: reviewsReducer,
 	},
 });
 
