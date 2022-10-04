@@ -6,6 +6,10 @@ import SalesHit from '../../components/SalesHit';
 import Reviews from '../../components/Reviews';
 
 const Home: React.FC = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Hero />

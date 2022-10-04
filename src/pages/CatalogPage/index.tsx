@@ -6,6 +6,10 @@ import ProductsItem from '../../components/ProductsItem';
 import { RootState } from '../../redux/store';
 
 const CatalogPage: React.FC = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const categoryId = Number(useParams().categoryId);
 	const products = useSelector((state: RootState) => state.products);
 	const catalog = useSelector((state: RootState) => state.catalog);

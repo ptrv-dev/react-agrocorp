@@ -6,6 +6,10 @@ import { RootState } from '../../redux/store';
 import './FullProduct.scss';
 
 const FullProduct: React.FC = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const params = useParams();
 
 	const catalogId = Number(params.categoryId);
