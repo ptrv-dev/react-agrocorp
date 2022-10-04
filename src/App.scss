@@ -44,11 +44,31 @@ button {
 	border-radius: 10px;
 	border: none;
 	padding: 10px 20px;
+	transition: box-shadow 0.3s, background 0.3s, color 0.3s, transform 0.3s;
+	&:hover {
+		background: #0e4e66;
+		box-shadow: 0 5px 10px rgba(#153548, 0.4);
+		transform: translateY(-2px);
+	}
 	&_o {
 		background: none;
 		border: 2px solid #153548;
 		color: #153548;
 		text-transform: uppercase;
+		svg {
+			path {
+				transition: fill 0.3s;
+			}
+		}
+		&:hover {
+			background: #153548;
+			color: #ffffff;
+			svg {
+				path {
+					fill: #ffffff;
+				}
+			}
+		}
 	}
 }
 

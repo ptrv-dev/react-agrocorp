@@ -67,30 +67,38 @@ const Footer: React.FC = () => {
 					<div className="footer__column">
 						<nav className="footer__nav footer-nav">
 							<ul className="footer-nav__list">
-								<li className="footer-nav__item">
-									<a href="/" className="footer-nav__link">
+								<Link to={'/'} className="footer-nav__item">
+									<span className="footer-nav__link">
 										Головна
-									</a>
-								</li>
-								<li className="footer-nav__item">
-									<a href="/" className="footer-nav__link">
+									</span>
+								</Link>
+								<Link to={'news'} className="footer-nav__item">
+									<span className="footer-nav__link">
 										Новини
-									</a>
-								</li>
-								<li className="footer-nav__item">
-									<a href="/" className="footer-nav__link">
+									</span>
+								</Link>
+								<Link
+									to={'about-us'}
+									className="footer-nav__item"
+								>
+									<span className="footer-nav__link">
 										Про нас
-									</a>
-								</li>
-								<li className="footer-nav__item">
-									<a href="/" className="footer-nav__link">
+									</span>
+								</Link>
+								<Link
+									to={'contact'}
+									className="footer-nav__item"
+								>
+									<span className="footer-nav__link">
 										Контакти
-									</a>
-								</li>
+									</span>
+								</Link>
 							</ul>
 						</nav>
 						<nav className="footer__nav footer-nav">
-							<p className="footer-nav__title">Продукція</p>
+							<Link to={'catalog'} className="footer-nav__title">
+								Продукція
+							</Link>
 							<ul className="footer-nav__list">
 								{catalogList.map((item) => (
 									<li

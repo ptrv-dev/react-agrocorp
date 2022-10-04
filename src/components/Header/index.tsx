@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -98,31 +98,56 @@ const Header: React.FC = () => {
 				<div className="container">
 					<nav className="nav header__nav">
 						<ul className="nav__list">
-							<li className="nav__item">
-								<a href="/" className="nav__link">
-									Головна
-								</a>
-							</li>
-							<li className="nav__item">
-								<a href="/" className="nav__link">
-									Продукція
-								</a>
-							</li>
-							<li className="nav__item">
-								<a href="/" className="nav__link">
-									Новини
-								</a>
-							</li>
-							<li className="nav__item">
-								<a href="/" className="nav__link">
-									Про нас
-								</a>
-							</li>
-							<li className="nav__item">
-								<a href="/" className="nav__link">
-									Контакти
-								</a>
-							</li>
+							<Link
+								to={'/'}
+								className={`nav__item ${
+									useLocation().pathname === '/'
+										? 'active'
+										: ''
+								}`}
+							>
+								<span className="nav__link">Головна</span>
+							</Link>
+							<Link
+								to={'catalog'}
+								className={`nav__item ${
+									useLocation().pathname === '/catalog'
+										? 'active'
+										: ''
+								}`}
+							>
+								<span className="nav__link">Продукція</span>
+							</Link>
+							<Link
+								to={'news'}
+								className={`nav__item ${
+									useLocation().pathname === '/news'
+										? 'active'
+										: ''
+								}`}
+							>
+								<span className="nav__link">Новини</span>
+							</Link>
+							<Link
+								to={'about-us'}
+								className={`nav__item ${
+									useLocation().pathname === '/about-us'
+										? 'active'
+										: ''
+								}`}
+							>
+								<span className="nav__link">Про нас</span>
+							</Link>
+							<Link
+								to={'contact'}
+								className={`nav__item ${
+									useLocation().pathname === '/contact'
+										? 'active'
+										: ''
+								}`}
+							>
+								<span className="nav__link">Контакти</span>
+							</Link>
 							{isButtonMoved && (
 								<button className="button header__button">
 									Зв'язатися з нами
