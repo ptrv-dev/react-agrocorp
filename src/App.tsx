@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import CatalogPage from './pages/CatalogPage';
 
 import './App.scss';
+import FullProduct from './pages/FullProduct';
 
 const App: React.FC = () => {
 	React.useEffect(() => {}, []);
@@ -19,6 +20,10 @@ const App: React.FC = () => {
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path="catalog/:categoryId" element={<CatalogPage />} />
+				<Route
+					path="catalog/:categoryId/:productId"
+					element={<FullProduct />}
+				/>
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />

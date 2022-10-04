@@ -28,7 +28,7 @@ const ProductsItem: React.FC<ProductItemType> = ({
 				<div className="products-item__row">
 					<div className="products-item__price">{price},00 ₴</div>
 					<Link
-						to={`catalog/${categoryId}/${id}`}
+						to={`/catalog/${categoryId}/${id}`}
 						className="button products-item__button"
 					>
 						Докладніше...
