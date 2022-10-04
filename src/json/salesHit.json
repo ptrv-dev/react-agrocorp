@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"categoryId": 3,
+		"title": "Каток подрібнювач (КП-6)",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus."
+	},
+	{
+		"id": 2,
+		"categoryId": 3,
+		"title": "Розкидач орг. добрив (роД-6)",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus."
+	},
+	{
+		"id": 3,
+		"categoryId": 2,
+		"title": "Просапна сівалка (УПС-4)",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus."
+	}
+]

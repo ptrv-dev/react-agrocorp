@@ -1,8 +1,8 @@
 import React from 'react';
+import Hero from '../../components/Hero';
 import Advantages from '../../components/Advantages';
 import Catalog from '../../components/Catalog';
-
-import Hero from '../../components/Hero';
+import SalesHit from '../../components/SalesHit';
 
 const Home: React.FC = () => {
 	return (
@@ -10,6 +10,7 @@ const Home: React.FC = () => {
 			<Hero />
 			<Advantages />
 			<Catalog />
+			<SalesHit />
 		</>
 	);
 };
