@@ -1,0 +1,33 @@
+.not-found {
+	padding: 200px 0;
+	text-align: center;
+	&__image {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto 30px auto;
+		svg {
+			path {
+				fill: #153548;
+			}
+			polygon {
+				fill: #153548;
+			}
+		}
+	}
+	&__title {
+		font-size: 40px;
+		@media screen and (max-width: 424.98px) {
+			font-size: 28px;
+		}
+		@media screen and (max-width: 374.98px) {
+			font-size: 24px;
+		}
+
+		color: #153548;
+		margin-bottom: 10px;
+	}
+	&__text {
+		font-size: 18px;
+		color: rgba(#153548, 0.5);
+	}
+}
