@@ -1,0 +1,111 @@
+.contact {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		flex-basis: calc(50% - 15px);
+		background: #f0f4f7;
+		border-radius: 20px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__subtitle {
+		font-size: 24px;
+		color: #153548;
+		text-transform: uppercase;
+		font-weight: 400;
+		margin-bottom: 15px;
+		padding-left: 1.25rem;
+	}
+	&__phones-list {
+		font-size: 18px;
+		list-style: none;
+		margin-bottom: 30px;
+		li {
+			display: inline-flex;
+			align-items: center;
+			color: #153548;
+			&:not(:last-of-type) {
+				margin-bottom: 10px;
+			}
+			a {
+				color: inherit;
+				text-decoration: none;
+				font-weight: 700;
+				margin-left: 15px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			svg {
+				margin-right: 5px;
+				path {
+					fill: #153548;
+				}
+			}
+		}
+	}
+	&__email {
+		display: inline-flex;
+		align-items: center;
+		font-size: 18px;
+		color: #153548;
+		text-decoration: none;
+		font-weight: 700;
+		margin-bottom: 30px;
+		&:hover {
+			text-decoration: underline;
+		}
+		svg {
+			margin-right: 5px;
+			path {
+				fill: #153548;
+			}
+		}
+	}
+	.map {
+		border-radius: 20px;
+		overflow: hidden;
+		flex: 1;
+		&__canvas {
+			width: 100%;
+
+			height: 100%;
+		}
+		&__iframe {
+			border: none;
+			width: 100%;
+			height: 100%;
+			min-height: 400px;
+		}
+	}
+	&__address {
+		font-size: 18px;
+		color: #153548;
+		display: inline-flex;
+		align-items: center;
+		svg {
+			flex-shrink: 0;
+			margin-right: 5px;
+			path {
+				fill: #153548;
+			}
+		}
+		margin-bottom: 30px;
+	}
+	&__work-time {
+		font-size: 18px;
+		color: #153548;
+		display: inline-flex;
+		align-items: center;
+		svg {
+			flex-shrink: 0;
+			margin-right: 5px;
+			path {
+				fill: #153548;
+			}
+		}
+	}
+}

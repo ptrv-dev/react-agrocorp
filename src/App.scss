@@ -30,6 +30,8 @@ button {
 #root {
 	overflow: hidden;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
@@ -79,6 +81,7 @@ button {
 
 .section {
 	padding: 50px 0;
+	flex: 1;
 	&__title {
 		margin-bottom: 50px;
 		font-weight: 400;

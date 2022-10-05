@@ -13,6 +13,7 @@ import FullProduct from './pages/FullProduct';
 import Catalog from './components/Catalog';
 import PopUp from './components/PopUp';
 import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
 
 const App: React.FC = () => {
 	React.useEffect(() => {}, []);
@@ -29,6 +30,7 @@ const App: React.FC = () => {
 				/>
 				<Route path="/catalog" element={<Catalog />} />
 				<Route path="/about-us" element={<AboutUs />} />
+				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<PopUp />
