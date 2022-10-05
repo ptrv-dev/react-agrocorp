@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
 								/>
 								<rect fill="none" width="32" height="32" />
 							</svg>
-							Понеділок - П'ятниця
+							Понеділок - Субота
 							<br />
 							8:00 - 18:00
 						</p>
