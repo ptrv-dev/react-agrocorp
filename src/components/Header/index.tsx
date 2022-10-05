@@ -25,6 +25,12 @@ const Header: React.FC = () => {
 		};
 	}, []);
 
+	const location = useLocation();
+
+	React.useEffect(() => {
+		setIsNavOpen(false);
+	}, [location]);
+
 	const onBurgerClick = () => setIsNavOpen((prev) => !prev);
 
 	return (
