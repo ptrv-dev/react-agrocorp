@@ -15,8 +15,8 @@ const SalesHit: React.FC = () => {
 			<div className="container">
 				<div className="section__title">Хіти продажів</div>
 				<div className="sales-hit__row">
-					{salesHitList.map((item) => (
-						<SalesHitItem key={item.id} {...item} />
+					{salesHitList.map((item, index) => (
+						<SalesHitItem key={index} {...item} />
 					))}
 				</div>
 			</div>

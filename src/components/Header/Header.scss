@@ -98,10 +98,12 @@
 			&::after {
 				width: 100%;
 			}
-			.drop-down {
-				top: 100%;
-				opacity: 1;
-				visibility: visible;
+			@media screen and (min-width: 767.98px) {
+				.drop-down {
+					top: 100%;
+					opacity: 1;
+					visibility: visible;
+				}
 			}
 		}
 		position: relative;
@@ -153,5 +155,10 @@
 		font-size: 18px;
 		color: #ffffff;
 		text-transform: uppercase;
+	}
+}
+@media screen and (max-width: 767.98px) {
+	.drop-down {
+		display: none;
 	}
 }

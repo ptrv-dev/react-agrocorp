@@ -28,7 +28,6 @@
 		text-transform: uppercase;
 		text-align: center;
 		color: #153548;
-		margin-bottom: 5px;
 		@media screen and (max-width: 520px) {
 			font-size: 18px;
 		}
@@ -37,5 +36,18 @@
 		text-align: center;
 		font-size: 14px;
 		color: rgba(#153548, 0.5);
+	}
+}
+@media screen and (max-width: 425px) {
+	.advantages-item {
+		flex: 0 0 170px;
+		margin: 0 auto 15px auto;
+
+		&__image {
+			svg {
+				width: 50px;
+				height: 50px;
+			}
+		}
 	}
 }

@@ -104,7 +104,7 @@
 			text-align: center;
 		}
 		&__button {
-			&:not(:last-of-type) {
+			&:not(:last-child) {
 				margin-right: 15px;
 			}
 		}
@@ -114,7 +114,7 @@
 @media screen and (max-width: 375px) {
 	.hero {
 		&__button {
-			&:not(:last-of-type) {
+			&:not(:last-child) {
 				margin: 0 0 15px 0;
 			}
 		}

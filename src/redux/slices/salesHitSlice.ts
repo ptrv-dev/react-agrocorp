@@ -5,8 +5,6 @@ import data from '../../json/salesHit.json';
 export type SalesHitItemType = {
 	id: number;
 	categoryId: number;
-	title: string;
-	description: string;
 };
 
 const initialState: SalesHitItemType[] = data;

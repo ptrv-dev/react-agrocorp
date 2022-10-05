@@ -6,23 +6,15 @@ const Advantages: React.FC = () => {
 	const advantagesList = [
 		{
 			title: 'Гарантія якості',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
 		},
 		{
 			title: 'Безкоштовна доставка',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
 		},
 		{
 			title: 'Великий каталог',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
 		},
 		{
 			title: 'Швидкі консультації',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ultrices sapien, id ullamcorper lacus. Vestibulum sollicitudin nibh nec lacus.',
 		},
 	];
 
@@ -51,9 +43,6 @@ const Advantages: React.FC = () => {
 						<h4 className="advantages-item__title">
 							{advantagesList[0].title}
 						</h4>
-						<p className="advantages-item__text">
-							{advantagesList[0].description}
-						</p>
 					</div>
 					<div className="advantages__item advantages-item">
 						<div className="advantages-item__image">
@@ -83,9 +72,6 @@ const Advantages: React.FC = () => {
 						<h4 className="advantages-item__title">
 							{advantagesList[1].title}
 						</h4>
-						<p className="advantages-item__text">
-							{advantagesList[1].description}
-						</p>
 					</div>
 					<div className="advantages__item advantages-item">
 						<div className="advantages-item__image">
@@ -119,9 +105,6 @@ const Advantages: React.FC = () => {
 						<h4 className="advantages-item__title">
 							{advantagesList[2].title}
 						</h4>
-						<p className="advantages-item__text">
-							{advantagesList[2].description}
-						</p>
 					</div>
 					<div className="advantages__item advantages-item">
 						<div className="advantages-item__image">
@@ -141,9 +124,6 @@ const Advantages: React.FC = () => {
 						<h4 className="advantages-item__title">
 							{advantagesList[3].title}
 						</h4>
-						<p className="advantages-item__text">
-							{advantagesList[3].description}
-						</p>
 					</div>
 				</div>
 			</div>
