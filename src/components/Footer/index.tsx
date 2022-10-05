@@ -121,7 +121,8 @@ const Footer: React.FC = () => {
 			<div className="footer__bottom">
 				<div className="container">
 					<h4 className="footer__copyright">
-						© 2022 “АгроКорп” • All Rights Reserved.
+						© 2022 “АгроКорп” • All Rights Reserved. <br />
+						Made by <a href="https://bit.ly/3rwojZt">ptrv-dev</a>
 					</h4>
 				</div>
 			</div>
