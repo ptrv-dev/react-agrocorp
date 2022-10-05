@@ -1,9 +1,13 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
+import { RootState } from '../../redux/store';
 
 import './Header.scss';
 
 const Header: React.FC = () => {
+	const catalog = useSelector((state: RootState) => state.catalog);
+
 	const [isNavOpen, setIsNavOpen] = React.useState<boolean>(false);
 	const [isButtonMoved, setIsButtonMoved] = React.useState<boolean>(
 		window.innerWidth < 520
@@ -117,6 +121,21 @@ const Header: React.FC = () => {
 								}`}
 							>
 								<span className="nav__link">Продукція</span>
+								<ul className="drop-down">
+									{catalog.map((item) => (
+										<li
+											key={item.id}
+											className="drop-down__item"
+										>
+											<Link
+												to={`/catalog/${item.id}`}
+												className="drop-down__link"
+											>
+												{item.title}
+											</Link>
+										</li>
+									))}
+								</ul>
 							</Link>
 							<Link
 								to={'news'}

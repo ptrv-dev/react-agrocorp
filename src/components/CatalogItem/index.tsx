@@ -7,7 +7,7 @@ import './CatalogItem.scss';
 
 const CatalogItem: React.FC<CatalogItemType> = ({ id, imageUrl, title }) => {
 	return (
-		<Link to={`catalog/${id}`} className="catalog-item">
+		<Link to={`/catalog/${id}`} className="catalog-item">
 			<div className="catalog-item__image">
 				<img
 					src={require('../../static/img/catalog/' + imageUrl)}

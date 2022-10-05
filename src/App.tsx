@@ -10,6 +10,7 @@ import CatalogPage from './pages/CatalogPage';
 
 import './App.scss';
 import FullProduct from './pages/FullProduct';
+import Catalog from './components/Catalog';
 
 const App: React.FC = () => {
 	React.useEffect(() => {}, []);
@@ -19,11 +20,12 @@ const App: React.FC = () => {
 			<Header />
 			<Routes>
 				<Route index element={<Home />} />
-				<Route path="catalog/:categoryId" element={<CatalogPage />} />
+				<Route path="/catalog/:categoryId" element={<CatalogPage />} />
 				<Route
-					path="catalog/:categoryId/:productId"
+					path="/catalog/:categoryId/:productId"
 					element={<FullProduct />}
 				/>
+				<Route path="/catalog" element={<Catalog />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
