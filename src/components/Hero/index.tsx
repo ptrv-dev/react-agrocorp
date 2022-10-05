@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContactButton from '../UI/ContactButton';
 
 import './Hero.scss';
 
@@ -14,9 +15,8 @@ const Hero: React.FC = () => {
 						частин
 					</h1>
 					<div className="hero__row">
-						<button className="button hero__button">
-							Зв'язатися з нами
-						</button>
+						<ContactButton />
+
 						<Link
 							to={'/catalog'}
 							className="button button_o hero__button"

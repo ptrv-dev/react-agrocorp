@@ -37,7 +37,7 @@
 	&__row {
 		display: flex;
 	}
-	&__button {
+	.button {
 		svg {
 			margin-left: 5px;
 		}
@@ -103,7 +103,7 @@
 			font-size: 28px;
 			text-align: center;
 		}
-		&__button {
+		.button {
 			&:not(:last-child) {
 				margin-right: 15px;
 			}
@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 375px) {
 	.hero {
-		&__button {
+		.button {
 			&:not(:last-child) {
 				margin: 0 0 15px 0;
 			}

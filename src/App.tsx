@@ -11,6 +11,7 @@ import CatalogPage from './pages/CatalogPage';
 import './App.scss';
 import FullProduct from './pages/FullProduct';
 import Catalog from './components/Catalog';
+import PopUp from './components/PopUp';
 
 const App: React.FC = () => {
 	React.useEffect(() => {}, []);
@@ -28,6 +29,7 @@ const App: React.FC = () => {
 				<Route path="/catalog" element={<Catalog />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
+			<PopUp />
 			<Footer />
 		</BrowserRouter>
 	);

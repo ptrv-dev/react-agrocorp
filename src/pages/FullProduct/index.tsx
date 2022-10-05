@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import ContactButton from '../../components/UI/ContactButton';
 import { RootState } from '../../redux/store';
 
 import './FullProduct.scss';
@@ -76,9 +77,7 @@ const FullProduct: React.FC = () => {
 								<p className="full-product__column-footer">
 									{product?.footer}
 								</p>
-								<button className="button full-product__button">
-									Зв'язатися з нами
-								</button>
+								<ContactButton />
 							</div>
 							<div className="full-product__column">
 								<table>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { RootState } from '../../redux/store';
+import ContactButton from '../UI/ContactButton';
 
 import './Header.scss';
 
@@ -80,11 +81,7 @@ const Header: React.FC = () => {
 						</a>
 					</div>
 					<div className="header__actions">
-						{!isButtonMoved && (
-							<button className="button header__button">
-								Зв'язатися з нами
-							</button>
-						)}
+						{!isButtonMoved && <ContactButton />}
 						<button
 							onClick={onBurgerClick}
 							className={`header-burger ${
@@ -167,11 +164,7 @@ const Header: React.FC = () => {
 							>
 								<span className="nav__link">Контакти</span>
 							</Link>
-							{isButtonMoved && (
-								<button className="button header__button">
-									Зв'язатися з нами
-								</button>
-							)}
+							{isButtonMoved && <ContactButton />}
 						</ul>
 					</nav>
 				</div>

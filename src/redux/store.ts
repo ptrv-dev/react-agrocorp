@@ -5,6 +5,7 @@ import productsReducer from './slices/productsSlice';
 import catalogReducer from './slices/catalogSlice';
 import salesHitReducer from './slices/salesHitSlice';
 import reviewsReducer from './slices/reviewsSlice';
+import popUpReducer from './slices/popUpSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
 		catalog: catalogReducer,
 		salesHit: salesHitReducer,
 		reviews: reviewsReducer,
+		popUp: popUpReducer,
 	},
 });
 
