@@ -12,6 +12,7 @@ import './App.scss';
 import FullProduct from './pages/FullProduct';
 import Catalog from './components/Catalog';
 import PopUp from './components/PopUp';
+import AboutUs from './pages/AboutUs';
 
 const App: React.FC = () => {
 	React.useEffect(() => {}, []);
@@ -27,6 +28,7 @@ const App: React.FC = () => {
 					element={<FullProduct />}
 				/>
 				<Route path="/catalog" element={<Catalog />} />
+				<Route path="/about-us" element={<AboutUs />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<PopUp />
