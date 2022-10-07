@@ -13,7 +13,7 @@ const CatalogPage: React.FC = () => {
 	const categoryId = Number(useParams().categoryId);
 	const products = useSelector((state: RootState) => state.products);
 	const catalog = useSelector((state: RootState) => state.catalog);
-	// console.log(products.filter((item) => item.categoryId === categoryId));
+
 	const title = catalog.find(({ id }) => id === categoryId)?.title;
 
 	return (

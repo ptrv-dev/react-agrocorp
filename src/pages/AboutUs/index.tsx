@@ -3,6 +3,10 @@ import React from 'react';
 import './AboutUs.scss';
 
 const AboutUs: React.FC = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<section className="section about-us">
 			<div className="container">

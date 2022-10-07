@@ -3,6 +3,10 @@ import React from 'react';
 import './NotFound.scss';
 
 const NotFound: React.FC = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className="not-found">
 			<div className="container">

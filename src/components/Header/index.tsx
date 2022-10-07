@@ -126,17 +126,13 @@ const Header: React.FC = () => {
 								<span className="nav__link">Продукція</span>
 								<ul className="drop-down">
 									{catalog.map((item) => (
-										<li
+										<Link
 											key={item.id}
-											className="drop-down__item"
+											to={`/catalog/${item.id}`}
+											className="drop-down__link"
 										>
-											<Link
-												to={`/catalog/${item.id}`}
-												className="drop-down__link"
-											>
-												{item.title}
-											</Link>
-										</li>
+											{item.title}
+										</Link>
 									))}
 								</ul>
 							</Link>

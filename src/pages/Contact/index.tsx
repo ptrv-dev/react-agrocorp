@@ -3,6 +3,10 @@ import React from 'react';
 import './Contact.scss';
 
 const Contact: React.FC = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<section className="section contact">
 			<div className="container">
