@@ -105,67 +105,83 @@ const Header: React.FC = () => {
 				<div className="container">
 					<nav className="nav header__nav">
 						<ul className="nav__list">
-							<Link
-								to={'/'}
-								className={`nav__item ${
-									useLocation().pathname === '/'
-										? 'active'
-										: ''
-								}`}
-							>
-								<span className="nav__link">Головна</span>
-							</Link>
-							<Link
-								to={'catalog'}
-								className={`nav__item ${
-									useLocation().pathname.includes('catalog')
-										? 'active'
-										: ''
-								}`}
-							>
-								<span className="nav__link">Продукція</span>
+							<li className="nav__item">
+								<Link
+									to={'/'}
+									className={`nav__link ${
+										useLocation().pathname === '/'
+											? 'active'
+											: ''
+									}`}
+								>
+									Головна
+								</Link>
+							</li>
+							<li className="nav__item">
+								<Link
+									to={'catalog'}
+									className={`nav__link ${
+										useLocation().pathname.includes(
+											'catalog'
+										)
+											? 'active'
+											: ''
+									}`}
+								>
+									Продукція
+								</Link>
 								<ul className="drop-down">
 									{catalog.map((item) => (
-										<Link
+										<li
 											key={item.id}
-											to={`/catalog/${item.id}`}
-											className="drop-down__link"
+											className="drop-down__item"
 										>
-											{item.title}
-										</Link>
+											<Link
+												to={`/catalog/${item.id}`}
+												className="drop-down__link"
+											>
+												{item.title}
+											</Link>
+										</li>
 									))}
 								</ul>
-							</Link>
-							<Link
-								to={'news'}
-								className={`nav__item ${
-									useLocation().pathname === '/news'
-										? 'active'
-										: ''
-								}`}
-							>
-								<span className="nav__link">Новини</span>
-							</Link>
-							<Link
-								to={'about-us'}
-								className={`nav__item ${
-									useLocation().pathname === '/about-us'
-										? 'active'
-										: ''
-								}`}
-							>
-								<span className="nav__link">Про нас</span>
-							</Link>
-							<Link
-								to={'contact'}
-								className={`nav__item ${
-									useLocation().pathname === '/contact'
-										? 'active'
-										: ''
-								}`}
-							>
-								<span className="nav__link">Контакти</span>
-							</Link>
+							</li>
+							<li className="nav__item">
+								<Link
+									to={'news'}
+									className={`nav__link ${
+										useLocation().pathname === '/news'
+											? 'active'
+											: ''
+									}`}
+								>
+									Новини
+								</Link>
+							</li>
+							<li className="nav__item">
+								<Link
+									to={'about-us'}
+									className={`nav__link ${
+										useLocation().pathname === '/about-us'
+											? 'active'
+											: ''
+									}`}
+								>
+									Про нас
+								</Link>
+							</li>
+							<li className="nav__item">
+								<Link
+									to={'contact'}
+									className={`nav__link ${
+										useLocation().pathname === '/contact'
+											? 'active'
+											: ''
+									}`}
+								>
+									Контакти
+								</Link>
+							</li>
 							{isButtonMoved && <ContactButton />}
 						</ul>
 					</nav>
