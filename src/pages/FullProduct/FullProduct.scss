@@ -86,7 +86,8 @@
 
 	&__nav {
 		height: 100%;
-		overflow: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
 		flex-shrink: 0;
 	}
 	&__main {
@@ -177,6 +178,8 @@
 		}
 		&__nav {
 			display: flex;
+			overflow-y: hidden;
+			overflow-x: auto;
 		}
 		&__slide {
 			flex-shrink: 0;
