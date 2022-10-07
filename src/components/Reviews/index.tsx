@@ -2,6 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 
+import Image from 'react-image-webp';
+
 import './Reviews.scss';
 
 const Reviews: React.FC = () => {
@@ -50,8 +52,11 @@ const Reviews: React.FC = () => {
 							>
 								<div className="reviews-slider-item__column">
 									<div className="reviews-slider-item__image">
-										<img
+										<Image
 											src={require(`../../static/img/reviews/${item.imageUrl}`)}
+											webp={require(`../../static/img/reviews/${
+												item.imageUrl.split('.')[0]
+											}.webp`)}
 											alt={item.name}
 										/>
 									</div>

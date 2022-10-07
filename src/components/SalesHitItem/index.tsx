@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { SalesHitItemType } from '../../redux/slices/salesHitSlice';
 import { RootState } from '../../redux/store';
 
+import Image from 'react-image-webp';
+
 import './SalesHitItem.scss';
 
 const SalesHitItem: React.FC<SalesHitItemType> = (props: SalesHitItemType) => {
@@ -16,8 +18,9 @@ const SalesHitItem: React.FC<SalesHitItemType> = (props: SalesHitItemType) => {
 	return (
 		<div className="sales-hit-item">
 			<div className="sales-hit-item__image">
-				<img
+				<Image
 					src={require(`../../static/img/products/${product?.categoryId}_${product?.id}/0.png`)}
+					webp={require(`../../static/img/products/${product?.categoryId}_${product?.id}/0.webp`)}
 					alt={product?.title}
 				/>
 			</div>

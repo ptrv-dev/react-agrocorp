@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ContactButton from '../UI/ContactButton';
 
+import Image from 'react-image-webp';
+
 import './Hero.scss';
 
 const Hero: React.FC = () => {
@@ -38,8 +40,9 @@ const Hero: React.FC = () => {
 					</div>
 				</div>
 				<div className="hero__image">
-					<img
+					<Image
 						src={require('../../static/img/hero/hero-image.png')}
+						webp={require('../../static/img/hero/hero-image.webp')}
 						alt="Трактор"
 					/>
 				</div>

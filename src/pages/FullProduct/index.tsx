@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import ContactButton from '../../components/UI/ContactButton';
 import { RootState } from '../../redux/store';
 
+import Image from 'react-image-webp';
+
 import './FullProduct.scss';
 
 const FullProduct: React.FC = () => {
@@ -30,8 +32,9 @@ const FullProduct: React.FC = () => {
 				<div className="full-product">
 					<div className="full-product-slider">
 						<div className="full-product-slider__main">
-							<img
+							<Image
 								src={require(`../../static/img/products/${catalogId}_${productId}/${currentSlide}.png`)}
+								webp={require(`../../static/img/products/${catalogId}_${productId}/${currentSlide}.webp`)}
 								alt="Перший слайд"
 							/>
 						</div>
@@ -44,8 +47,9 @@ const FullProduct: React.FC = () => {
 										index === currentSlide ? 'active' : ''
 									}`}
 								>
-									<img
+									<Image
 										src={require(`../../static/img/products/${catalogId}_${productId}/${index}.png`)}
+										webp={require(`../../static/img/products/${catalogId}_${productId}/${index}.webp`)}
 										alt={'Слайд №' + (index + 1)}
 									/>
 								</div>

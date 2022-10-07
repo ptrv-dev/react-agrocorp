@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { RootState } from '../../redux/store';
 import ContactButton from '../UI/ContactButton';
 
+import Image from "react-image-webp";
+
 import './Header.scss';
 
 const Header: React.FC = () => {
@@ -39,8 +41,9 @@ const Header: React.FC = () => {
 				<div className="container">
 					<Link to="/" className="logo">
 						<div className="logo__image">
-							<img
+							<Image
 								src={require('../../static/img/logo.png')}
+								webp={require('../../static/img/logo.webp')}
 								alt="Logo"
 							/>
 						</div>

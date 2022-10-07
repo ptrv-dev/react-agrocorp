@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { RootState } from '../../redux/store';
 
+import Image from "react-image-webp"
+
 import './Footer.scss';
 
 const Footer: React.FC = () => {
@@ -16,8 +18,9 @@ const Footer: React.FC = () => {
 					<div className="footer__column">
 						<Link to="/" className="logo">
 							<div className="logo__image">
-								<img
+								<Image
 									src={require('../../static/img/logo.png')}
+									webp={require('../../static/img/logo.webp')}
 									alt="Logo"
 								/>
 							</div>

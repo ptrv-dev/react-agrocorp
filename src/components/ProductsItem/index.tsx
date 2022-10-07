@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import { ProductItemType } from '../../redux/slices/productsSlice';
 
+import Image from "react-image-webp";
+
 import './ProductsItem.scss';
 
 const ProductsItem: React.FC<ProductItemType> = ({
@@ -15,8 +17,9 @@ const ProductsItem: React.FC<ProductItemType> = ({
 	return (
 		<div className="products-item">
 			<div className="products-item__image">
-				<img
+				<Image
 					src={require(`../../static/img/products/${categoryId}_${id}/0.png`)}
+					webp={require(`../../static/img/products/${categoryId}_${id}/0.webp`)}
 					alt={title}
 				/>
 			</div>
