@@ -14,6 +14,7 @@ import Catalog from './components/Catalog';
 import PopUp from './components/PopUp';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
+import News from './pages/News';
 
 const App: React.FC = () => {
 	React.useEffect(() => {}, []);
@@ -29,6 +30,7 @@ const App: React.FC = () => {
 					element={<FullProduct />}
 				/>
 				<Route path="/catalog" element={<Catalog />} />
+				<Route path="/news" element={<News />} />
 				<Route path="/about-us" element={<AboutUs />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
