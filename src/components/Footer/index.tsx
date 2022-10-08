@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 import { RootState } from '../../redux/store';
 
-import Image from "react-image-webp"
+import Image from 'react-image-webp';
 
 import './Footer.scss';
 
 const Footer: React.FC = () => {
-	const catalogList = useSelector((state: RootState) => state.catalog);
+	const catalogList = useSelector((state: RootState) => state.catalog.items);
 
 	return (
 		<footer className="footer">

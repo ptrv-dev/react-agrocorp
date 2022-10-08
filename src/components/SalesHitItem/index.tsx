@@ -10,7 +10,7 @@ import './SalesHitItem.scss';
 
 const SalesHitItem: React.FC<SalesHitItemType> = (props: SalesHitItemType) => {
 	const product = useSelector((state: RootState) =>
-		state.products.find(
+		state.products.items.find(
 			({ id, categoryId }) =>
 				id === props.id && categoryId === props.categoryId
 		)

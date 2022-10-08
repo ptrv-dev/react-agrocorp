@@ -15,8 +15,20 @@ import PopUp from './components/PopUp';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import News from './pages/News';
+import { useAppDispatch } from './redux/store';
+import { fetchProducts } from './redux/slices/productsSlice';
+import { fetchCatalog } from './redux/slices/catalogSlice';
+import { fetchSalesHit } from './redux/slices/salesHitSlice';
+import { fetchReviews } from './redux/slices/reviewsSlice';
 
 const App: React.FC = () => {
+	const dispatch = useAppDispatch();
+	React.useEffect(() => {
+		dispatch(fetchProducts());
+		dispatch(fetchCatalog());
+		dispatch(fetchSalesHit());
+		dispatch(fetchReviews());
+	}, [dispatch]);
 	return (
 		<BrowserRouter>
 			<Header />

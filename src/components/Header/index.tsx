@@ -4,12 +4,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { RootState } from '../../redux/store';
 import ContactButton from '../UI/ContactButton';
 
-import Image from "react-image-webp";
+import Image from 'react-image-webp';
 
 import './Header.scss';
 
 const Header: React.FC = () => {
-	const catalog = useSelector((state: RootState) => state.catalog);
+	const catalog = useSelector((state: RootState) => state.catalog.items);
 
 	const [isNavOpen, setIsNavOpen] = React.useState<boolean>(false);
 	const [isButtonMoved, setIsButtonMoved] = React.useState<boolean>(

@@ -1,6 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-import data from '../../json/reviews.json';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type ReviewsItemType = {
 	id: number;
@@ -9,18 +7,42 @@ export type ReviewsItemType = {
 	text: string;
 };
 
-const initialState: ReviewsItemType[] = data;
+interface IReviewsState {
+	items: ReviewsItemType[];
+}
+
+const initialState: IReviewsState = {
+	items: [],
+};
+
+export const fetchReviews = createAsyncThunk<ReviewsItemType[]>(
+	'reviews/fetchCatalog',
+	async () => {
+		const data = await fetch('/json/reviews.json').then((result) =>
+			result.json()
+		);
+		return data;
+	}
+);
 
 export const reviewsSlice = createSlice({
-	name: 'salesHit',
+	name: 'reviews',
 	initialState,
-	reducers: {
-		setReviews: (state, action: PayloadAction<ReviewsItemType[]>) => {
-			state = action.payload;
-		},
+	reducers: {},
+	extraReducers: (builder) => {
+		builder.addCase(
+			fetchReviews.fulfilled,
+			(state, action: PayloadAction<ReviewsItemType[]>) => {
+				state.items = action.payload;
+			}
+		);
+		builder.addCase(fetchReviews.pending, (state) => {
+			state.items = [];
+		});
+		builder.addCase(fetchReviews.rejected, (state) => {
+			state.items = [];
+		});
 	},
 });
-
-export const { setReviews } = reviewsSlice.actions;
 
 export default reviewsSlice.reducer;

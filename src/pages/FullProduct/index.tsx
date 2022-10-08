@@ -19,7 +19,7 @@ const FullProduct: React.FC = () => {
 	const productId = Number(params.productId);
 
 	const product = useSelector((state: RootState) =>
-		state.products.find(
+		state.products.items.find(
 			({ id, categoryId }) => id === productId && categoryId === catalogId
 		)
 	);

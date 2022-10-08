@@ -7,7 +7,7 @@ import CatalogItem from '../CatalogItem';
 import './Catalog.scss';
 
 const Catalog: React.FC = () => {
-	const catalog = useSelector((state: RootState) => state.catalog);
+	const catalog = useSelector((state: RootState) => state.catalog.items);
 	return (
 		<section className="section catalog">
 			<div className="container">

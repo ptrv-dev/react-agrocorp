@@ -11,10 +11,10 @@ const CatalogPage: React.FC = () => {
 	}, []);
 
 	const categoryId = Number(useParams().categoryId);
-	const products = useSelector((state: RootState) => state.products);
+	const products = useSelector((state: RootState) => state.products.items);
 	const catalog = useSelector((state: RootState) => state.catalog);
 
-	const title = catalog.find(({ id }) => id === categoryId)?.title;
+	const title = catalog.items.find(({ id }) => id === categoryId)?.title;
 
 	return (
 		<section className="section products">

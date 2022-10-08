@@ -8,7 +8,9 @@ import SalesHitItem from '../SalesHitItem';
 import './SalesHit.scss';
 
 const SalesHit: React.FC = () => {
-	const salesHitList = useSelector((state: RootState) => state.salesHit);
+	const salesHitList = useSelector(
+		(state: RootState) => state.salesHit.items
+	);
 
 	return (
 		<section className="section sales-hit">

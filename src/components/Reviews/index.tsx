@@ -7,7 +7,7 @@ import Image from 'react-image-webp';
 import './Reviews.scss';
 
 const Reviews: React.FC = () => {
-	const reviewsList = useSelector((state: RootState) => state.reviews);
+	const reviewsList = useSelector((state: RootState) => state.reviews.items);
 	const [currentSlide, setCurrentSlide] = React.useState<number>(0);
 	const reviewItem = React.useRef<HTMLDivElement>(null);
 

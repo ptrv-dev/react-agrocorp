@@ -1,6 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-import data from '../../json/catalog.json';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type CatalogItemType = {
 	id: number;
@@ -8,18 +6,42 @@ export type CatalogItemType = {
 	title: string;
 };
 
-const initialState: CatalogItemType[] = data;
+interface ICatalogState {
+	items: CatalogItemType[];
+}
+
+export const fetchCatalog = createAsyncThunk<CatalogItemType[]>(
+	'catalog/fetchCatalog',
+	async () => {
+		const data = await fetch('/json/catalog.json').then((result) =>
+			result.json()
+		);
+		return data;
+	}
+);
+
+const initialState: ICatalogState = {
+	items: [],
+};
 
 export const catalogSlice = createSlice({
 	name: 'catalog',
 	initialState,
-	reducers: {
-		setCatalog: (state, action: PayloadAction<CatalogItemType[]>) => {
-			state = action.payload;
-		},
+	reducers: {},
+	extraReducers: (builder) => {
+		builder.addCase(
+			fetchCatalog.fulfilled,
+			(state, action: PayloadAction<CatalogItemType[]>) => {
+				state.items = action.payload;
+			}
+		);
+		builder.addCase(fetchCatalog.pending, (state) => {
+			state.items = [];
+		});
+		builder.addCase(fetchCatalog.rejected, (state) => {
+			state.items = [];
+		});
 	},
 });
-
-export const { setCatalog } = catalogSlice.actions;
 
 export default catalogSlice.reducer;
