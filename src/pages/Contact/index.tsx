@@ -86,8 +86,8 @@ const Contact: React.FC = () => {
 								<path d="M16,30,7.5645,20.0513c-.0479-.0571-.3482-.4515-.3482-.4515A10.8888,10.8888,0,0,1,5,13a11,11,0,0,1,22,0,10.8844,10.8844,0,0,1-2.2148,6.5973l-.0015.0025s-.3.3944-.3447.4474ZM8.8125,18.395c.001.0007.2334.3082.2866.3744L16,26.9079l6.91-8.15c.0439-.0552.2783-.3649.2788-.3657A8.901,8.901,0,0,0,25,13,9,9,0,1,0,7,13a8.9054,8.9054,0,0,0,1.8125,5.395Z" />
 								<rect fill="none" width="32" height="32" />
 							</svg>
-							Привокзальна вулиця 13, місто Оріхів, Запорізька
-							область, Україна, 70500
+							Стартова вул., 69А, Запоріжжя, Запорізька область,
+							69112
 						</p>
 						<h4 className="contact__subtitle">Графік роботи:</h4>
 						<p className="contact__work-time">
@@ -115,7 +115,7 @@ const Contact: React.FC = () => {
 								<iframe
 									className="map__iframe"
 									title="Google Map"
-									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21540.19088986084!2d35.773025!3d47.557595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92e71e36a7be8dab!2z0J7RgNC10YXQvtCy0YHQtdC70YzQvNCw0YggLSDQv9GA0L7QuNC30LLQvtC00LjRgtC10LvRjCDRgdC10LvRjNGF0L7Qt9GC0LXRhdC90LjQutC4INC90L7QvNC10YAgMSDQsiDQo9C60YDQsNC40L3QtQ!5e0!3m2!1sru!2sua!4v1664998308929!5m2!1sru!2sua"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.030795053497!2d35.281332581409636!3d47.858366850485716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5d2749b6a1dd%3A0xbdf1a97170755b8a!2z0KHRgtCw0YDRgtC-0LLQsNGPINGD0LsuLCA2OdCQLCDQl9Cw0L_QvtGA0L7QttGM0LUsINCX0LDQv9C-0YDQvtC20YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY5MTEy!5e0!3m2!1sru!2sua!4v1665232554075!5m2!1sru!2sua"
 								></iframe>
 							</div>
 						</div>

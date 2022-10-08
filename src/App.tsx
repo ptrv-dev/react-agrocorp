@@ -17,8 +17,6 @@ import Contact from './pages/Contact';
 import News from './pages/News';
 
 const App: React.FC = () => {
-	React.useEffect(() => {}, []);
-
 	return (
 		<BrowserRouter>
 			<Header />
