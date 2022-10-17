@@ -15,12 +15,16 @@ const SalesHitItem: React.FC<SalesHitItemType> = (props: SalesHitItemType) => {
 				id === props.id && categoryId === props.categoryId
 		)
 	);
+	let path = '';
+	product?.categoryId === undefined
+		? (path = '1_1')
+		: (path = `${product?.categoryId}_${product?.id}`);
 	return (
 		<div className="sales-hit-item">
 			<div className="sales-hit-item__image">
 				<Image
-					src={require(`../../static/img/products/${product?.categoryId}_${product?.id}/0.png`)}
-					webp={require(`../../static/img/products/${product?.categoryId}_${product?.id}/0.webp`)}
+					src={require(`../../static/img/products/${path}/0.png`)}
+					webp={require(`../../static/img/products/${path}/0.webp`)}
 					alt={product?.title}
 				/>
 			</div>
